@@ -10,7 +10,9 @@ const app = express();
 // DataBase setup
 
 // DB Connection
-mongoose.connect("mongodb://localhost:27017/todoListDB");
+mongoose.connect(
+	"mongodb+srv://admin-nash2t:test123@cluster0.rfradcl.mongodb.net/todoListDB"
+);
 // Schema
 const itemsSchema = new mongoose.Schema({
 	name: String,
